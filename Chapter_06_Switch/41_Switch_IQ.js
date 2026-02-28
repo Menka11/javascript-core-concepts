@@ -1,7 +1,7 @@
 let value = "5";
 
 switch (value) {
-    case 5:
+    case 5+7:
         console.log("Number 5 matched");
         break;
     case "5":
