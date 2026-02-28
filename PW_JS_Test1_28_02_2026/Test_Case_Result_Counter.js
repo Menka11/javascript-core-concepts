@@ -24,7 +24,7 @@ for(const testResult of testResults){
         console.log("Status of test is invalid");
     }
 }
-let passRatePercentage = (passCount * 100) / testCount;
+let passRatePercentage = ((passCount * 100) / testCount).toFixed(2);
 if(passCount==testCount){
     verdict = "Ready for release";
 }

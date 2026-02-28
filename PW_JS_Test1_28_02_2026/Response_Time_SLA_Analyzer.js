@@ -24,6 +24,6 @@ while(i < responseTimesLeng){
 
 }
 if(SLABreachersCount!=0){
-    SLABreachersCountPercentage = (SLABreachersCount * 100 )/responseTimesLeng;
+    SLABreachersCountPercentage = ((SLABreachersCount * 100 )/responseTimesLeng).toFixed(2);
     console.log(`Total Requests: ${responseTimesLeng} Min Response: ${min}ms Max Response: ${max}ms SLA Breaches: ${SLABreachersCount} (${SLABreachersCountPercentage}%) Overall Status: ❌ SLA VIOLATED`)
 }
